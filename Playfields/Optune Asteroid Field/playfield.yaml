@@ -1,0 +1,86 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 7.94
+TemperatureDay: -123
+Music: DistantWorlds
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Optune Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite4Space
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlueYellow
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidField
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant2
+          Mode: Survival
+          Name: Trading Station
+          Pos: [200.384, 610.8564, 268.0668]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [306.6404, -315.275, -2256.515]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [1103.899, -464.3439, -1196.281]
+              Radius: 628
+            - Name: SpaceDroneLaser
+              Pos: [1353.22, 2101, 7624.85]
+              Radius: 396
+            - Name: SpaceDronePlasma
+              Pos: [4804.965, 803, -18.21367]
+              Radius: 382
+            - Name: SpaceDronePlasma
+              Pos: [-506.2672, -918, 1068.091]
+              Radius: 775
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 32
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 587
+                PathWayPoint:
+                - [3372, -3019, -695]
+                - [-2111, 535, -3123]
+                - [-3603, 4574, 1272]
+                - [-1436, -4572, 3617]
+                - [494, 4645, 804]
+                - [-4794, -2489, -1877]
+                - [-2030, -2639, 2090]
+                - [4103, -3927, -4794]
+                - [45, 3916, -322]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

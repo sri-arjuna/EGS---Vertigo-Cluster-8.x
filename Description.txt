@@ -1,0 +1,21 @@
+Vertigo Cluster (WIP-v0.5)
+=================
+Empyrion Alpha 8.x
+----------------------
+
+A scenario with several starter planets occupied by different brands.
+Along the way, there are several high gravity planets around to take care of.
+
+Say you take planet Doules or Dra as a starter planet...
+All things named "AEGIS <something>" or "IDI <someting>" are there to take and use!
+
+For any issues with vehicles or structures, please contact the specific author of it.
+
+
+Starter Planets / Brands (so far)
+------------------------------------
+* 2 Temperate
+* AEGIS, TemperateWater
+* ERA, Desert - HG
+* IDI, Temperate
+* SEA, Desert - HG

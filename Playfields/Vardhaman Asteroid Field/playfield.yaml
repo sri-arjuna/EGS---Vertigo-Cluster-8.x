@@ -1,0 +1,143 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 9.07
+TemperatureDay: -150
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Vardhaman Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsRed
+Nebula: PrefabNebulaRed
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRectangle2
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant4
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-355.0652, -487.9552, 16.48932]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel03Cobalt
+          Prefab: AsteroidVoxel03Cobalt
+          Name: Cobalt Asteroid
+          Pos: [-4576, 1323, 4353]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [1232.425, -878, -3147.305]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [3025.974, -1631, 3212.173]
+              Radius: 522
+            - Name: SpaceDronePlasma
+              Pos: [6151.683, -981, 3721.949]
+              Radius: 439
+            - Name: SpaceDroneLaser
+              Pos: [-684.7448, -1948, -728.783]
+              Radius: 393
+            - Name: SpaceDroneLaser
+              Pos: [-2789.277, 1395, 3730.536]
+              Radius: 745
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 37
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 346
+                PathWayPoint:
+                - [-2954, 837, -1993]
+                - [-1700, -9847, 3189]
+                - [0, 4021, -18]
+                - [183, -3937, 30]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 23
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 386
+                PathWayPoint:
+                - [-2126, -7706, 6456]
+                - [-3219, -1725, -3889]
+                - [-1581, -2635, -2618]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 22
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 419
+                PathWayPoint:
+                - [-3795, -1531, -1736]
+                - [1341, 5493, -1202]
+                - [2755, 9982, -2916]
+                - [518, -8010, -3677]
+                - [-1485, -6025, -1748]
+                - [-765, 5594, -484]
+                - [1282, -6556, 2373]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 33
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-7410.482, 6304.675, 126.6216]
+                Radius: 1056
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_Migotzu-Orbital-Hub
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [222.8545, -614.5355, -4508.923]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 15
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

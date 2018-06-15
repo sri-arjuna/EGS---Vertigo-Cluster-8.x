@@ -1,0 +1,124 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 6.64
+TemperatureDay: -200
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Eyatan features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite3Space
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlueOrange
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRing
+          Name: Asteroid Field
+          Pos: [-13024, 3707, -4818]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel03Silicon
+          Prefab: AsteroidVoxel03Silicon
+          Name: Silicon Asteroid
+          Pos: [3755, -1937, -3584]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Neodymium
+          Prefab: AsteroidVoxel03Neodymium
+          Name: Neodymium Asteroid
+          Pos: [-4063, 19, 2788]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Neodymium
+          Prefab: AsteroidVoxel01Neodymium
+          Name: Neodymium Asteroid
+          Pos: [2168, -2730, -3791]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-10297.71, -188.3594, -718.4451]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-3209.309, -1.739114, 8625.703]
+              Radius: 493
+            - Name: SpaceDroneLaser
+              Pos: [8547.349, 303.2975, 4743.78]
+              Radius: 763
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 24
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 314
+                PathWayPoint:
+                - [-4476, 5214, 1045]
+                - [-5537, -4585, -3440]
+                - [-1672, 860, -7157]
+                - [3304, -4990, -5318]
+                - [5348, 3654, -1249]
+                - [4396, 5920, 2731]
+                - [1222, -6293, 5232]
+                - [-3200, -3562, 5151]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 20
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 380
+                PathWayPoint:
+                - [1209, 5202, -2852]
+                - [5144, 1037, -2080]
+                - [5859, 2539, 2484]
+                - [2590, 6251, 6405]
+                - [-2690, -6237, 6345]
+                - [-7147, 1488, 2890]
+                - [-7741, -6444, -3282]
+                - [-2798, 6541, -6918]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 22
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [4542.174, 4699.598, -2183.119]
+                Radius: 983
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

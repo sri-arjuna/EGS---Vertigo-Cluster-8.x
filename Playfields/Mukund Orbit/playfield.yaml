@@ -1,0 +1,208 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 9.14
+TemperatureDay: -155
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Mukund features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsRed
+Nebula: PrefabNebulaRed
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant4
+          Mode: Survival
+          Name: Trading Station
+          Pos: [5610.173, 3507.572, 354.9556]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel02Silicon
+          Prefab: AsteroidVoxel02Silicon
+          Name: Silicon Asteroid
+          Pos: [3416, -2801, 3647]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Silicon
+          Prefab: AsteroidVoxel02Silicon
+          Name: Silicon Asteroid
+          Pos: [-195, -2254, 5410]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Promethium
+          Prefab: AsteroidVoxel02Promethium
+          Name: Promethium Asteroid
+          Pos: [-2188, -3729, 4656]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Promethium
+          Prefab: AsteroidVoxel01Promethium
+          Name: Promethium Asteroid
+          Pos: [5201, 2645, 552]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Promethium
+          Prefab: AsteroidVoxel03Promethium
+          Name: Promethium Asteroid
+          Pos: [-3101, 3755, 2222]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Erestrum
+          Prefab: AsteroidVoxel03Erestrum
+          Name: Erestrum Asteroid
+          Pos: [-3135, -4022, 2154]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Erestrum
+          Prefab: AsteroidVoxel01Erestrum
+          Name: Erestrum Asteroid
+          Pos: [4274, 3435, 1706]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Erestrum
+          Prefab: AsteroidVoxel03Erestrum
+          Name: Erestrum Asteroid
+          Pos: [-1918, 4629, 2878]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Gold
+          Prefab: AsteroidVoxel02Gold
+          Name: Gold Asteroid
+          Pos: [4264, 3214, 1135]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [5632.904, -2896.302, 6238.13]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [6015.627, -3183.244, 9118.697]
+              Radius: 627
+            - Name: SpaceDroneLaser
+              Pos: [4160.016, 1854.602, 7911.823]
+              Radius: 400
+            - Name: SpaceDroneLaser
+              Pos: [5854.834, -3599.406, 5827.652]
+              Radius: 639
+            - Name: SpaceDronePlasma
+              Pos: [-8154.25, -2208.081, -6525.419]
+              Radius: 556
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 30
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 544
+                PathWayPoint:
+                - [2551, -3051, 3380]
+                - [-273, -6363, 5290]
+                - [-3188, -7053, 3424]
+                - [-5025, -3348, 621]
+                - [-3867, 2726, -2507]
+                - [-1224, -6087, -3993]
+                - [1800, 6340, -4251]
+                - [4072, 691, -2079]
+                - [4640, 4967, 1067]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 38
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 597
+                PathWayPoint:
+                - [5030, -2939, -484]
+                - [3322, -2509, -4029]
+                - [-447, -7494, -4648]
+                - [-3621, 1328, -2985]
+                - [-4924, -4514, 474]
+                - [-3275, 3257, 3972]
+                - [439, -3270, 4562]
+                - [3253, 891, 2682]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 29
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [4208.926, 3101.819, 396.9821]
+                Radius: 937
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_XenuSupplyStation
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-2260.307, 5080.814, -3580.205]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 20
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

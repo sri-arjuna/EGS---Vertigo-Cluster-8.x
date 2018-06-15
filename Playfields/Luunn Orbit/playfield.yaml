@@ -1,0 +1,145 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 9.38
+TemperatureDay: -119
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Luunn features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareRedSpace
+Stars: SkyboxStarsPurple
+Nebula: PrefabNebulaOrange
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRing
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidFieldBoxExclude
+          Name: Asteroid Field
+          Pos: [8259, -9261, -1007]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel03Iron
+          Prefab: AsteroidVoxel03Iron
+          Name: Iron Asteroid
+          Pos: [-5504, -4948, -5504]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-4166.231, -3480.193, 13608.42]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-6363.78, -3900.87, 10125.38]
+              Radius: 555
+            - Name: SpaceDroneLaser
+              Pos: [11199.27, 4099.563, 9988.191]
+              Radius: 792
+            - Name: SpaceDronePlasma
+              Pos: [-11113.61, 1565.896, 7675.908]
+              Radius: 491
+            - Name: SpaceDronePlasma
+              Pos: [1341.02, 3478.188, -14234.05]
+              Radius: 725
+            - Name: SpaceDronePlasma
+              Pos: [12760.08, 3860.866, 7855.672]
+              Radius: 532
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 20
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 379
+                PathWayPoint:
+                - [-2197, 281, -9381]
+                - [4988, 6057, -8039]
+                - [9328, 9929, -2184]
+                - [7740, -4094, 4802]
+                - [2237, -7390, 9554]
+                - [-5320, 8244, 8575]
+                - [-9815, -8333, 2299]
+                - [-9630, 827, -5975]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 24
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 493
+                PathWayPoint:
+                - [-5137, -2251, -7148]
+                - [4999, -4880, -6807]
+                - [7675, 8251, 2537]
+                - [-47, 2509, 9225]
+                - [-9755, 8581, 3114]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 38
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 521
+                PathWayPoint:
+                - [7791, 2539, -4803]
+                - [7514, 3519, 4053]
+                - [225, -2217, 7795]
+                - [-6632, -6760, 4089]
+                - [-7750, -6255, -4180]
+                - [-238, -8988, -8264]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 37
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-4654.109, -6522.489, 5861.602]
+                Radius: 1042
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_PF2
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [360.6327, 8772.625, -5488.949]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 24
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

@@ -1,0 +1,161 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 5.56
+TemperatureDay: -124
+Music: moonstone
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Cladex Gamma Station features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite4Space
+Stars: SkyboxStarsPurple
+Nebula: PrefabNebulaBluePinkPurple
+
+### POIs
+POIs:
+    Fixed:
+        - Type: BA_Admin
+          Prefab: TSO_Variant6
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-1031.615, -433, 1513.933]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel02Iron
+          Prefab: AsteroidVoxel02Iron
+          Name: Iron Asteroid
+          Pos: [1082, 4002, 4400]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Magnesium
+          Prefab: AsteroidVoxel03Magnesium
+          Name: Magnesium Asteroid
+          Pos: [4938, -408, 3214]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Magnesium
+          Prefab: AsteroidVoxel03Magnesium
+          Name: Magnesium Asteroid
+          Pos: [-4405, -2839, -2059]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Promethium
+          Prefab: AsteroidVoxel02Promethium
+          Name: Promethium Asteroid
+          Pos: [-4826, 1982, 1527]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Promethium
+          Prefab: AsteroidVoxel01Promethium
+          Name: Promethium Asteroid
+          Pos: [-4139, -263, 4018]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Sathium
+          Prefab: AsteroidVoxel03Sathium
+          Name: Sathium Asteroid
+          Pos: [-3787, 2592, -3763]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Erestrum
+          Prefab: AsteroidVoxel03Erestrum
+          Name: Erestrum Asteroid
+          Pos: [-4319, 2222, -3184]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [305.4097, -629, -5898.098]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-1598.496, 1188, -4865.126]
+              Radius: 574
+            - Name: SpaceDronePlasma
+              Pos: [129.6474, 1831, -312.1467]
+              Radius: 660
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 27
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 341
+                PathWayPoint:
+                - [2374, -3331, 1970]
+                - [3527, 5347, -4564]
+                - [1619, 5352, -1556]
+                - [1575, -3202, 7840]
+                - [-5508, 4843, -5481]
+                - [-1881, -4892, 5790]
+                - [102, -3454, -2661]
+                - [-2342, 7446, 3404]
+                - [7093, 7618, 4454]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 31
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-2140.451, -3029.925, -1528.135]
+                Radius: 1253
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: BAO_XenuSupplyStation
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [4631.551, -7704.552, -4802.694]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 22
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

@@ -1,0 +1,699 @@
+---
+# Sector configuration file
+Build: 1702
+Sectors:
+# Sun Star
+  - Coordinates: [0, 0, 0]
+    Color: 1, 1, 0
+    Icon: No
+    OrbitLine: false
+    SectorMapType: None
+    Playfields:
+      - ['0, 0, 0', Sun Star, Sun Star]
+# Uln
+  - Coordinates: [-19, -72, 100]
+    Color: 0, 0.8, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Aqualea Orbit, Uskryne Orbit, Jayi Orbit, Meratorius Pi Station]
+    Deny: [Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Nilesh Orbit, Hypanos Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Uln, Uln, 'Human:1']
+      - ['-5016, 12242, 4335', Uln Moon, Uln Moon]
+      - ['0, 0, 0', Uln Orbit, Uln Orbit]
+# Jayi
+  - Coordinates: [-143, -43, 173]
+    Color: 0.8, 0.8, 0.8
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Dhrupad Mu Station, Azelja Asteroid Field, Uln Orbit]
+    Deny: [Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Dehah Chi Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Jayi, Jayi]
+      - ['-8483, -1097, -10184', Jayi Moon, Jayi Moon]
+      - ['0, 0, 0', Jayi Orbit, Jayi Orbit]
+# Meratorius Pi Station
+  - Coordinates: [-100, -50, 45]
+    Color: 0.7, 0.5, 0
+    Icon: Kite
+    OrbitLine: false
+    SectorMapType: Station
+    Allow: [Vardhaman Orbit, Aqualea Orbit, Uln Orbit]
+    Deny: [Jayi Orbit, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Meratorius Pi Station, Meratorius Pi Station]
+# Hemnath
+  - Coordinates: [-70, 39, -149]
+    Color: 0, 0.8, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Theanid Orbit, Onina Orbit, Tintia Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Hemnath, Hemnath, 'Human:1']
+      - ['5508, -9574, 1535', Hemnath Moon, Hemnath Moon]
+      - ['0, 0, 0', Hemnath Orbit, Hemnath Orbit]
+# Tintia
+  - Coordinates: [-180, 0, -63]
+    Color: 0.8, 0.8, 0.8
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Azelja Asteroid Field, Kinsath Asteroid Field, Hemnath Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Tintia, Tintia]
+      - ['0, 0, 0', Tintia Orbit, Tintia Orbit]
+# Wirtam
+  - Coordinates: [17, 4, -289]
+    Color: 0.8, 0.8, 0.8
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Bettno Orbit, Kinsath Asteroid Field]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Narayan Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Wirtam, Wirtam]
+      - ['0, 0, 0', Wirtam Orbit, Wirtam Orbit]
+# Narayan
+  - Coordinates: [47, 6, -228]
+    Color: 0.8, 0.8, 0.8
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Scelet Orbit, Mokor Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Narayan, Narayan]
+      - ['3171, 11284, 686', Narayan Moon, Narayan Moon]
+      - ['0, 0, 0', Narayan Orbit, Narayan Orbit]
+# Bettno
+  - Coordinates: [236, 7, -152]
+    Color: 0.8, 0.8, 0.8
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Wirtam Orbit, Cladex Gamma Station, Stetia Orbit, Vardhaman Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Narayan Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Bettno, Bettno]
+      - ['6805, 8794, -469', Bettno Moon, Bettno Moon]
+      - ['0, 0, 0', Bettno Orbit, Bettno Orbit]
+# Sulpus
+  - Coordinates: [180, 92, 229]
+    Color: 0.8, 0.8, 0.8
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Cladex Gamma Station, Dhrupad Mu Station, Xanres Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Sulpus, Sulpus]
+      - ['0, 0, 0', Sulpus Orbit, Sulpus Orbit]
+# Dendrode
+  - Coordinates: [-55, -21, 48]
+    Color: 0.4, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Taslia Orbit, Bromalis Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Dendrode, Dendrode]
+      - ['0, 0, 0', Dendrode Orbit, Dendrode Orbit]
+# Bromalis
+  - Coordinates: [-61, 7, 53]
+    Color: 0.4, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Dendrode Orbit, Heka Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Bromalis, Bromalis]
+      - ['0, 0, 0', Bromalis Orbit, Bromalis Orbit]
+# Genno
+  - Coordinates: [74, -13, -6]
+    Color: 0.4, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Eyatan Orbit, Scelet Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Genno, Genno]
+      - ['-11185, 6406, -2280', Genno Moon, Genno Moon]
+      - ['0, 0, 0', Genno Orbit, Genno Orbit]
+# Onina
+  - Coordinates: [67, -56, 19]
+    Color: 0.4, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Hemnath Orbit, Gopesh Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Onina, Onina]
+      - ['0, 0, 0', Onina Orbit, Onina Orbit]
+# Trigyesh
+  - Coordinates: [-50, -39, -4]
+    Color: 0.4, 0.3, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Heka Orbit, Brandt Pi Station]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station]
+    Playfields:
+      - ['0, 0, 0', Trigyesh, Trigyesh]
+      - ['0, 0, 0', Trigyesh Orbit, Trigyesh Orbit]
+# Malladis
+  - Coordinates: [80, 21, -16]
+    Color: 0.4, 0.3, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Yupty Orbit, Optune Asteroid Field]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Damodara Orbit, Estroela Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Malladis, Malladis]
+      - ['0, 0, 0', Malladis Orbit, Malladis Orbit]
+# Damodara
+  - Coordinates: [51, -63, 38]
+    Color: 0.4, 0.3, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Dehah Chi Station, Munish Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Damodara, Damodara]
+      - ['0, 0, 0', Damodara Orbit, Damodara Orbit]
+# Estroela
+  - Coordinates: [-2, -13, 45]
+    Color: 0.4, 0.3, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Xanres Orbit, Luunn Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Gopesh Orbit, Stetia Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Estroela, Estroela]
+      - ['7535, -12378, -879', Estroela Moon, Estroela Moon]
+      - ['0, 0, 0', Estroela Orbit, Estroela Orbit]
+# Yupty
+  - Coordinates: [60, -31, -67]
+    Color: 0.4, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Lamatria Orbit, Malladis Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Damodara Orbit, Estroela Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Yupty, Yupty]
+      - ['-10013, -8706, -6285', Yupty Moon, Yupty Moon]
+      - ['0, 0, 0', Yupty Orbit, Yupty Orbit]
+# Keffen
+  - Coordinates: [64, 54, 28]
+    Color: 0.4, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Taras Asteroid Field, Eyatan Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Keffen, Keffen]
+      - ['5870, -7532, 10439', Keffen Moon, Keffen Moon]
+      - ['0, 0, 0', Keffen Orbit, Keffen Orbit]
+# Munish
+  - Coordinates: [-12, -69, -52]
+    Color: 0.4, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Damodara Orbit, Theanid Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Munish, Munish]
+      - ['12961, -293, 7372', Munish Moon, Munish Moon]
+      - ['0, 0, 0', Munish Orbit, Munish Orbit]
+# Gopal
+  - Coordinates: [21, 33, 33]
+    Color: 0.4, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Gopesh Orbit, Jatin Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Gopal, Gopal]
+      - ['5375, -10600, -5925', Gopal Moon, Gopal Moon]
+      - ['0, 0, 0', Gopal Orbit, Gopal Orbit]
+# Aqualea
+  - Coordinates: [-87, -33, 68]
+    Color: 0, 0.5, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Meratorius Pi Station, Uln Orbit]
+    Deny: [Jayi Orbit, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Aqualea, Aqualea]
+      - ['9577, -3898, 8515', Aqualea Moon, Aqualea Moon]
+      - ['0, 0, 0', Aqualea Orbit, Aqualea Orbit]
+# Nilesh
+  - Coordinates: [108, 1, -96]
+    Color: 0, 0.5, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Hypanos Orbit, Aja Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Nilesh, Nilesh]
+      - ['0, 0, 0', Nilesh Orbit, Nilesh Orbit]
+# Hypanos
+  - Coordinates: [138, -34, -97]
+    Color: 0, 0.5, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Optune Asteroid Field, Nilesh Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Hypanos, Hypanos]
+      - ['7450, 8835, -8460', Hypanos Moon, Hypanos Moon]
+      - ['0, 0, 0', Hypanos Orbit, Hypanos Orbit]
+# Uskryne
+  - Coordinates: [-50, 57, 111]
+    Color: 0, 0.5, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Uln Orbit, Zalan Orbit]
+    Deny: [Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Yeudoi Orbit, Ammery Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Uskryne, Uskryne]
+      - ['-3083, -11830, 6244', Uskryne Moon, Uskryne Moon]
+      - ['0, 0, 0', Uskryne Orbit, Uskryne Orbit]
+# Yeudoi
+  - Coordinates: [-83, -21, -162]
+    Color: 0.1, 0.6, 0.2
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Brandt Pi Station, Shiot Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station]
+    Playfields:
+      - ['0, 0, 0', Yeudoi, Yeudoi]
+      - ['-2499, 5736, 13104', Yeudoi Moon, Yeudoi Moon]
+      - ['0, 0, 0', Yeudoi Orbit, Yeudoi Orbit]
+# Ammery
+  - Coordinates: [-103, 70, 45]
+    Color: 0.1, 0.6, 0.2
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Effina Orbit, Taslia Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Ammery, Ammery]
+      - ['0, 0, 0', Ammery Orbit, Ammery Orbit]
+# Zalan
+  - Coordinates: [131, -25, 163]
+    Color: 0.1, 0.6, 0.2
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Uskryne Orbit, Effina Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Yeudoi Orbit, Ammery Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Zalan, Zalan]
+      - ['3625, 3275, 14950', Zalan Moon, Zalan Moon]
+      - ['0, 0, 0', Zalan Orbit, Zalan Orbit]
+# Ferrubid
+  - Coordinates: [-45, 37, -105]
+    Color: 0.1, 0.6, 0.2
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Girivar Asteroid Field, Tulmarea Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Ferrubid, Ferrubid]
+      - ['3955, -7998, 8894', Ferrubid Moon, Ferrubid Moon]
+      - ['0, 0, 0', Ferrubid Orbit, Ferrubid Orbit]
+# Shiot
+  - Coordinates: [119, -25, 100]
+    Color: 0, 0.5, 1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Yeudoi Orbit, Hades Asteroid Field]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Shiot, Shiot]
+      - ['-1045, -984, -8957', Shiot Moon, Shiot Moon]
+      - ['0, 0, 0', Shiot Orbit, Shiot Orbit]
+# Theanid
+  - Coordinates: [73, 4, 70]
+    Color: 0, 0.5, 1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Munish Orbit, Hemnath Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Theanid, Theanid]
+      - ['5491, 1287, 7519', Theanid Moon, Theanid Moon]
+      - ['0, 0, 0', Theanid Orbit, Theanid Orbit]
+# Heka
+  - Coordinates: [18, 11, 108]
+    Color: 0, 0.5, 1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Bromalis Orbit, Trigyesh Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Genno Orbit, Onina Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Heka, Heka]
+      - ['12057, -2128, 2466', Heka Moon, Heka Moon]
+      - ['0, 0, 0', Heka Orbit, Heka Orbit]
+# Aja
+  - Coordinates: [86, 37, -110]
+    Color: 0, 0.5, 1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Nilesh Orbit, Giriruhah Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Aja, Aja]
+      - ['-1190, -13194, 7492', Aja Moon, Aja Moon]
+      - ['0, 0, 0', Aja Orbit, Aja Orbit]
+# Jatin
+  - Coordinates: [-35, 32, -43]
+    Color: 0.3, 0.1, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Gopal Orbit, Auske Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Jatin, Jatin]
+      - ['0, 0, 0', Jatin Orbit, Jatin Orbit]
+# Lamatria
+  - Coordinates: [24, 50, -42]
+    Color: 0.3, 0.1, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Naulet Asteroid Field, Yupty Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Lamatria, Lamatria]
+      - ['2393, 9278, -7537', Lamatria Moon, Lamatria Moon]
+      - ['0, 0, 0', Lamatria Orbit, Lamatria Orbit]
+# Opis
+  - Coordinates: [14, -33, -41]
+    Color: 0.3, 0.1, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Tulmarea Orbit, Muhyotii Asteroid Field]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Opis, Opis]
+      - ['-5060, -6088, 5272', Opis Moon, Opis Moon]
+      - ['0, 0, 0', Opis Orbit, Opis Orbit]
+# Mokor
+  - Coordinates: [22, 102, -36]
+    Color: 0.3, 0.1, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Narayan Orbit, Naulet Asteroid Field]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Mokor, Mokor]
+      - ['-9883, -2062, 11970', Mokor Moon, Mokor Moon]
+      - ['0, 0, 0', Mokor Orbit, Mokor Orbit]
+# Eyatan
+  - Coordinates: [34, 2, -11]
+    Color: 0.5, 0.1, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Keffen Orbit, Genno Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Eyatan, Eyatan]
+      - ['-13025, 3708, -4818', Eyatan Moon, Eyatan Moon]
+      - ['0, 0, 0', Eyatan Orbit, Eyatan Orbit]
+# Auske
+  - Coordinates: [40, -36, 5]
+    Color: 0.5, 0.1, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Jatin Orbit, Girivar Asteroid Field]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Auske, Auske]
+      - ['0, 0, 0', Auske Orbit, Auske Orbit]
+# Tulmarea
+  - Coordinates: [57, -63, -23]
+    Color: 0.5, 0.1, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Ferrubid Orbit, Opis Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Tulmarea, Tulmarea]
+      - ['11726, 5903, 892', Tulmarea Moon, Tulmarea Moon]
+      - ['0, 0, 0', Tulmarea Orbit, Tulmarea Orbit]
+# Luunn
+  - Coordinates: [-54, 50, 8]
+    Color: 0.5, 0.1, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Estroela Orbit, Dehah Chi Station]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Luunn, Luunn]
+      - ['8259, -9262, -1008', Luunn Moon, Luunn Moon]
+      - ['0, 0, 0', Luunn Orbit, Luunn Orbit]
+# Gopesh
+  - Coordinates: [2, -56, -201]
+    Color: 0.2, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Onina Orbit, Gopal Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Gopesh, Gopesh]
+      - ['0, 0, 0', Gopesh Orbit, Gopesh Orbit]
+# Stetia
+  - Coordinates: [140, 71, -123]
+    Color: 0.2, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Giriruhah Orbit, Bettno Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Xanres Orbit, Effina Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Stetia, Stetia]
+      - ['0, 0, 0', Stetia Orbit, Stetia Orbit]
+# Xanres
+  - Coordinates: [77, -38, 79]
+    Color: 0.2, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Hades Asteroid Field, Estroela Orbit, Sulpus Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Xanres, Xanres]
+      - ['0, 0, 0', Xanres Orbit, Xanres Orbit]
+# Effina
+  - Coordinates: [-120, 48, 23]
+    Color: 0.2, 0.3, 0
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Zalan Orbit, Ammery Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Effina, Effina]
+      - ['14672, -2595, -4997', Effina Moon, Effina Moon]
+      - ['0, 0, 0', Effina Orbit, Effina Orbit]
+# Giriruhah
+  - Coordinates: [148, 27, -119]
+    Color: 0.2, 0.4, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Aja Orbit, Stetia Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Xanres Orbit, Effina Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Giriruhah, Giriruhah]
+      - ['0, 0, 0', Giriruhah Orbit, Giriruhah Orbit]
+# Scelet
+  - Coordinates: [13, -25, -125]
+    Color: 0.2, 0.4, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Genno Orbit, Narayan Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Scelet, Scelet]
+      - ['0, 0, 0', Scelet Orbit, Scelet Orbit]
+# Vardhaman
+  - Coordinates: [-159, -5, 58]
+    Color: 0.2, 0.4, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Meratorius Pi Station, Bettno Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Vardhaman, Vardhaman]
+      - ['0, 0, 0', Vardhaman Orbit, Vardhaman Orbit]
+# Taslia
+  - Coordinates: [-85, 39, 34]
+    Color: 0.2, 0.4, 0.1
+    Icon: Circle
+    OrbitLine: true
+    SectorMapType: Planet
+    Allow: [Ammery Orbit, Dendrode Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Taslia, Taslia]
+      - ['-2052, -9397, -13688', Taslia Moon, Taslia Moon]
+      - ['0, 0, 0', Taslia Orbit, Taslia Orbit]
+# Kinsath Asteroid Field
+  - Coordinates: [-174, 20, -103]
+    Color: 0.3, 0.3, 0.3
+    Icon: Rhombus
+    OrbitLine: false
+    SectorMapType: AsteroidField
+    Allow: [Tintia Orbit, Wirtam Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Kinsath Asteroid Field, Kinsath Asteroid Field]
+# Optune Asteroid Field
+  - Coordinates: [115, 11, -31]
+    Color: 0.3, 0.3, 0.3
+    Icon: Rhombus
+    OrbitLine: false
+    SectorMapType: AsteroidField
+    Allow: [Malladis Orbit, Hypanos Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Optune Asteroid Field, Optune Asteroid Field]
+# Girivar Asteroid Field
+  - Coordinates: [205, -82, -26]
+    Color: 0.3, 0.3, 0.3
+    Icon: Rhombus
+    OrbitLine: false
+    SectorMapType: AsteroidField
+    Allow: [Auske Orbit, Ferrubid Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Girivar Asteroid Field, Girivar Asteroid Field]
+# Naulet Asteroid Field
+  - Coordinates: [27, 27, -209]
+    Color: 0.3, 0.3, 0.3
+    Icon: Rhombus
+    OrbitLine: false
+    SectorMapType: AsteroidField
+    Allow: [Mokor Orbit, Lamatria Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Opis Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Naulet Asteroid Field, Naulet Asteroid Field]
+# Taras Asteroid Field
+  - Coordinates: [154, 39, 54]
+    Color: 0.3, 0.3, 0.3
+    Icon: Rhombus
+    OrbitLine: false
+    SectorMapType: AsteroidField
+    Allow: [Muhyotii Asteroid Field, Keffen Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Taras Asteroid Field, Taras Asteroid Field]
+# Muhyotii Asteroid Field
+  - Coordinates: [77, 34, 44]
+    Color: 0.3, 0.3, 0.3
+    Icon: Rhombus
+    OrbitLine: false
+    SectorMapType: AsteroidField
+    Allow: [Opis Orbit, Taras Asteroid Field]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Muhyotii Asteroid Field, Muhyotii Asteroid Field]
+# Hades Asteroid Field
+  - Coordinates: [-69, 26, -9]
+    Color: 0.3, 0.3, 0.3
+    Icon: Rhombus
+    OrbitLine: false
+    SectorMapType: AsteroidField
+    Allow: [Shiot Orbit, Xanres Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Hades Asteroid Field, Hades Asteroid Field]
+# Azelja Asteroid Field
+  - Coordinates: [-175, 33, 96]
+    Color: 0.3, 0.3, 0.3
+    Icon: Rhombus
+    OrbitLine: false
+    SectorMapType: AsteroidField
+    Allow: [Jayi Orbit, Tintia Orbit]
+    Deny: [Uln Orbit, Meratorius Pi Station, Hemnath Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Azelja Asteroid Field, Azelja Asteroid Field]
+# Dehah Chi Station
+  - Coordinates: [96, 10, 96]
+    Color: 0.7, 0.5, 0
+    Icon: Kite
+    OrbitLine: false
+    SectorMapType: Station
+    Allow: [Luunn Orbit, Damodara Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dhrupad Mu Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Dehah Chi Station, Dehah Chi Station]
+# Dhrupad Mu Station
+  - Coordinates: [-95, 12, 268]
+    Color: 0.7, 0.5, 0
+    Icon: Kite
+    OrbitLine: false
+    SectorMapType: Station
+    Allow: [Sulpus Orbit, Jayi Orbit]
+    Deny: [Uln Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Cladex Gamma Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Dhrupad Mu Station, Dhrupad Mu Station]
+# Cladex Gamma Station
+  - Coordinates: [224, 42, 137]
+    Color: 0.7, 0.5, 0
+    Icon: Kite
+    OrbitLine: false
+    SectorMapType: Station
+    Allow: [Bettno Orbit, Sulpus Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Trigyesh Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Yeudoi Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Brandt Pi Station]
+    Playfields:
+      - ['0, 0, 0', Cladex Gamma Station, Cladex Gamma Station]
+# Brandt Pi Station
+  - Coordinates: [202, -90, 55]
+    Color: 0.7, 0.5, 0
+    Icon: Kite
+    OrbitLine: false
+    SectorMapType: Station
+    Allow: [Trigyesh Orbit, Yeudoi Orbit]
+    Deny: [Uln Orbit, Jayi Orbit, Meratorius Pi Station, Hemnath Orbit, Tintia Orbit, Wirtam Orbit, Narayan Orbit, Bettno Orbit, Sulpus Orbit, Dendrode Orbit, Bromalis Orbit, Genno Orbit, Onina Orbit, Malladis Orbit, Damodara Orbit, Estroela Orbit, Yupty Orbit, Keffen Orbit, Munish Orbit, Gopal Orbit, Aqualea Orbit, Nilesh Orbit, Hypanos Orbit, Uskryne Orbit, Ammery Orbit, Zalan Orbit, Ferrubid Orbit, Shiot Orbit, Theanid Orbit, Heka Orbit, Aja Orbit, Jatin Orbit, Lamatria Orbit, Opis Orbit, Mokor Orbit, Eyatan Orbit, Auske Orbit, Tulmarea Orbit, Luunn Orbit, Gopesh Orbit, Stetia Orbit, Xanres Orbit, Effina Orbit, Giriruhah Orbit, Scelet Orbit, Vardhaman Orbit, Taslia Orbit, Kinsath Asteroid Field, Optune Asteroid Field, Girivar Asteroid Field, Naulet Asteroid Field, Taras Asteroid Field, Muhyotii Asteroid Field, Hades Asteroid Field, Azelja Asteroid Field, Dehah Chi Station, Dhrupad Mu Station, Cladex Gamma Station]
+    Playfields:
+      - ['0, 0, 0', Brandt Pi Station, Brandt Pi Station]

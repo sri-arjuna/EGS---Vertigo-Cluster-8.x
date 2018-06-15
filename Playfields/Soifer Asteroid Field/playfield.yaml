@@ -1,0 +1,171 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 9.54
+TemperatureDay: -154
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Soifer Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlue2
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRectangle2
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant2
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-406.819, 408.4209, 105.1681]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel03Iron
+          Prefab: AsteroidVoxel03Iron
+          Name: Iron Asteroid
+          Pos: [-1729, 965, -5834]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Magnesium
+          Prefab: AsteroidVoxel02Magnesium
+          Name: Magnesium Asteroid
+          Pos: [-1084, -4272, -3522]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Magnesium
+          Prefab: AsteroidVoxel03Magnesium
+          Name: Magnesium Asteroid
+          Pos: [-2830, 2443, -4393]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [2631.85, -1874, 4240.689]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-5837.298, 713, -2329.631]
+              Radius: 675
+            - Name: SpaceDroneLaser
+              Pos: [-3074.117, -2433, -829.2532]
+              Radius: 444
+            - Name: SpaceDroneLaser
+              Pos: [-7496.112, -2109, -1987.038]
+              Radius: 706
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 34
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 560
+                PathWayPoint:
+                - [-2787, 2967, -1314]
+                - [-4230, 7124, 10490]
+                - [-33, 8090, -12414]
+                - [-4897, -6100, -1770]
+                - [-4889, 1242, -1967]
+                - [-2879, 1211, 2502]
+                - [-1821, 9135, 1075]
+                - [-9094, -4490, 6577]
+                - [-2558, -4030, 1437]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 20
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 520
+                PathWayPoint:
+                - [430, -3966, -1853]
+                - [-3170, -2692, 2457]
+                - [-639, -5386, 8843]
+                - [7258, 4587, 8810]
+                - [-1485, -9603, -7957]
+                - [-3675, 8054, -5872]
+                - [-979, 7040, 2630]
+                - [-1184, 1047, -5740]
+                - [7357, 7890, 2461]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 32
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 486
+                PathWayPoint:
+                - [-1249, -4558, -4890]
+                - [-6189, 4760, -595]
+                - [3408, 1964, 5183]
+                - [3464, 1463, 5295]
+                - [208, 4421, 472]
+                - [-5188, 2404, 4078]
+                - [3284, -2426, 6663]
+                - [-784, -3459, 1065]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_Dion-III
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [554.2008, -480.817, 4194.738]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 22
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_CrusaldOrbital
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [4738.44, -992.7644, 3731.216]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 20
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

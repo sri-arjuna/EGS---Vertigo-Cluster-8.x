@@ -1,0 +1,135 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 7.25
+TemperatureDay: -184
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Nandlal features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlueYellow
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRing
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel01Promethium
+          Prefab: AsteroidVoxel01Promethium
+          Name: Promethium Asteroid
+          Pos: [4540, -2052, -2931]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-4225.738, -2548.722, -8863.096]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-4915.177, -3191.147, -7529.932]
+              Radius: 445
+            - Name: SpaceDronePlasma
+              Pos: [-10001.69, -2061.598, 5273.85]
+              Radius: 509
+            - Name: SpaceDroneLaser
+              Pos: [143.5386, -1019.921, -11690.71]
+              Radius: 607
+            - Name: SpaceDroneLaser
+              Pos: [-9420.369, -991.4619, 6506.293]
+              Radius: 754
+            - Name: SpaceDroneLaser
+              Pos: [-7833.219, 2699.53, -6383.494]
+              Radius: 338
+            - Name: SpaceDronePlasma
+              Pos: [10430.01, 864.8156, 4607.043]
+              Radius: 703
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 32
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 498
+                PathWayPoint:
+                - [-2689, 4387, -2923]
+                - [-6176, -5761, -800]
+                - [-5091, 4008, 3258]
+                - [-1597, 1850, 5103]
+                - [1842, 4354, 4424]
+                - [4284, 2875, 2219]
+                - [4069, 5464, -910]
+                - [2465, -6914, -3226]
+                - [-161, 5211, -3542]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 25
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 548
+                PathWayPoint:
+                - [-2006, 316, -4613]
+                - [1628, 5482, -4134]
+                - [3604, 3809, -1567]
+                - [3645, 3522, 1435]
+                - [1614, -380, 3712]
+                - [-1434, -3549, 3641]
+                - [-3090, 4184, 1343]
+                - [-3490, 5139, -1374]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 28
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 328
+                PathWayPoint:
+                - [-1337, 5066, 4322]
+                - [-6771, -299, 1539]
+                - [-5109, -4720, -5516]
+                - [2143, 4363, -6926]
+                - [6630, 3388, -1506]
+                - [4426, -5745, 4779]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 36
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [1863.491, -3150.14, 3682.563]
+                Radius: 1028
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

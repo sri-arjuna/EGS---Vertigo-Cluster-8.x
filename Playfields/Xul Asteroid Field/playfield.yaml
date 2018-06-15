@@ -1,0 +1,134 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 7.92
+TemperatureDay: -186
+Music: DistantWorlds
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Xul Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite4Space
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlueYellow
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidField
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant4
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-327.7909, -727.6002, -394.4954]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [293.6727, 1004, 280.3432]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [-482.0783, 519, 558.7885]
+              Radius: 389
+            - Name: SpaceDronePlasma
+              Pos: [2185.061, -575.1746, 824.7743]
+              Radius: 726
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 35
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 477
+                PathWayPoint:
+                - [5344, -7249, -5643]
+                - [4440, 2117, -7145]
+                - [6982, 2609, -2857]
+                - [2308, -488, 6694]
+                - [6629, -3952, 5226]
+                - [64, -4134, -13]
+                - [2949, -3076, 364]
+                - [124, -3773, -283]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 27
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 358
+                PathWayPoint:
+                - [5671, 6846, -6042]
+                - [1648, 3313, 259]
+                - [-1018, 4624, -406]
+                - [-2181, 4260, -649]
+                - [2178, 2165, -3750]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 37
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 517
+                PathWayPoint:
+                - [4792, -5145, 1035]
+                - [-1414, -4011, 684]
+                - [-693, 4002, 798]
+                - [-1631, 1082, -3378]
+                - [-2145, -3626, 3316]
+                - [-387, -4030, -750]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_Dion-III
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-892.7993, -4929.823, -4030.486]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 20
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_Migotzu-Orbital-Hub
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [1325.754, 3184.475, -5634.068]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 24
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

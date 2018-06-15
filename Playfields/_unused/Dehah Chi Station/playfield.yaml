@@ -1,0 +1,163 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 6.80
+TemperatureDay: -115
+Music: moonstone
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Dehah Chi Station features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite4Space
+Stars: SkyboxStarsPurple
+Nebula: PrefabNebulaBluePinkPurple
+
+### POIs
+POIs:
+    Fixed:
+        - Type: BA_Admin
+          Prefab: TSO_Variant5
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-1134.175, -1005, 1102.892]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel03Sathium
+          Prefab: AsteroidVoxel03Sathium
+          Name: Sathium Asteroid
+          Pos: [-862, 3489, 4279]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Sathium
+          Prefab: AsteroidVoxel02Sathium
+          Name: Sathium Asteroid
+          Pos: [3294, 1489, 4107]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Sathium
+          Prefab: AsteroidVoxel01Sathium
+          Name: Sathium Asteroid
+          Pos: [-2003, -3553, -3479]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-115.1212, 2449, -438.128]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-6690.146, 2074, -4079.809]
+              Radius: 793
+            - Name: SpaceDroneLaser
+              Pos: [-7157.53, 2121, 661.1412]
+              Radius: 373
+            - Name: SpaceDronePlasma
+              Pos: [1078.068, 178, -7388.766]
+              Radius: 494
+            - Name: SpaceDroneLaser
+              Pos: [-603.1901, -1589, 650.3312]
+              Radius: 756
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 21
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 396
+                PathWayPoint:
+                - [-2874, -4206, 3129]
+                - [-170, -6954, -213]
+                - [-5497, -2583, 5250]
+                - [379, -4892, -315]
+                - [1447, 7717, 1950]
+                - [-5237, 1857, 3460]
+                - [1721, 3578, -543]
+                - [-649, 3832, -1854]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 37
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 318
+                PathWayPoint:
+                - [3295, 2948, 918]
+                - [-397, -3769, -1548]
+                - [1830, -3456, 1169]
+                - [-3242, -555, -3372]
+                - [-1003, -2170, 5605]
+                - [5304, -819, -2720]
+                - [2103, 1372, -3432]
+                - [-2778, 2717, 826]
+                - [-3252, 1663, 661]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 24
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 513
+                PathWayPoint:
+                - [738, 1390, 5438]
+                - [6142, -4357, -3516]
+                - [-6221, -3273, 6082]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_Migotzu-Orbital-Hub
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-1731.591, 3031.838, 1465.819]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 17
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_XenuShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-4525.477, 4818.834, -366.0946]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 20
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

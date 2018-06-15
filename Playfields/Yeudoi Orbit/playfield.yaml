@@ -1,0 +1,136 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 7.12
+TemperatureDay: -175
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Yeudoi features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlue2
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldFewBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel03Magnesium
+          Prefab: AsteroidVoxel03Magnesium
+          Name: Magnesium Asteroid
+          Pos: [9055, -433, -3605]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Sathium
+          Prefab: AsteroidVoxel01Sathium
+          Name: Sathium Asteroid
+          Pos: [4370, 2047, 8238]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Sathium
+          Prefab: AsteroidVoxel01Sathium
+          Name: Sathium Asteroid
+          Pos: [-4755, -5621, 6586]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Sathium
+          Prefab: AsteroidVoxel01Sathium
+          Name: Sathium Asteroid
+          Pos: [-8523, 725, -4631]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [8341.765, -6038.038, 8001.219]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [10549.3, -2707.157, 7417.338]
+              Radius: 496
+            - Name: SpaceDroneLaser
+              Pos: [8416.403, -3961.7, -12889.42]
+              Radius: 410
+            - Name: SpaceDronePlasma
+              Pos: [10647, -5649.222, -5213.568]
+              Radius: 561
+            - Name: SpaceDroneLaser
+              Pos: [7604.731, 281.363, 12279.13]
+              Radius: 767
+            - Name: SpaceDronePlasma
+              Pos: [-10213.83, 1128.281, -12052.04]
+              Radius: 503
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 29
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 495
+                PathWayPoint:
+                - [-2170, 3163, 8535]
+                - [4195, 944, 7056]
+                - [8308, 8501, 2112]
+                - [7762, 5875, -4615]
+                - [1959, 2801, -7705]
+                - [-4317, -5419, -7262]
+                - [-7839, 1367, -1993]
+                - [-7176, 6099, 4266]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 34
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [5032.411, -8275.478, -1926.849]
+                Radius: 1490
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_GhostRiderShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-4076.71, 7768.33, 4965.341]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 21
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

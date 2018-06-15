@@ -1,0 +1,133 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 5.57
+TemperatureDay: -184
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Dendrode features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite3Space
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlueOrange
+
+### POIs
+POIs:
+    Fixed:
+        - Type: BA_Admin
+          Prefab: TSO_Variant1
+          Mode: Survival
+          Name: Trading Station
+          Pos: [7424.88, 15970.61, 3128.586]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-11840.19, -2290.965, 19013.06]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [17068.58, -998.6066, -11287.02]
+              Radius: 536
+            - Name: SpaceDronePlasma
+              Pos: [-19649.99, -4709.123, -12481.47]
+              Radius: 647
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 27
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 395
+                PathWayPoint:
+                - [-945, 15911, 8096]
+                - [-15195, -6693, 12017]
+                - [-21668, -8536, -2530]
+                - [-11555, -10480, -14611]
+                - [2257, -6367, -19325]
+                - [15420, -5568, -12194]
+                - [16733, -5697, 1954]
+                - [10274, 6120, 12991]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 26
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 328
+                PathWayPoint:
+                - [2451, -8529, 15897]
+                - [18014, -10961, 10319]
+                - [19348, 7563, -7669]
+                - [6322, -109, -20744]
+                - [-11587, -3834, -16872]
+                - [-23298, -10676, -1666]
+                - [-15781, -951, 17123]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 23
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 310
+                PathWayPoint:
+                - [-4650, -5483, 16583]
+                - [6511, -505, 14398]
+                - [15904, 106, 7642]
+                - [17319, -8627, -4425]
+                - [10837, -851, -15100]
+                - [-1567, 11245, -20678]
+                - [-12690, 578, -12989]
+                - [-18714, 10500, -1856]
+                - [-14291, -3179, 9761]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 37
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [5547.667, 8810.354, 15040.91]
+                Radius: 760
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_XenuShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-153.4417, 3718.673, 16500.07]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 17
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

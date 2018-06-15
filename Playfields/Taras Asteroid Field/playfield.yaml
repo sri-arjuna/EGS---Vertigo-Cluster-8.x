@@ -1,0 +1,180 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 8.19
+TemperatureDay: -112
+Music: moonstone
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Taras Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite3Space
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlueOrange
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidField
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant2
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-52.71526, -759.5994, 759.4063]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel02Iron
+          Prefab: AsteroidVoxel02Iron
+          Name: Iron Asteroid
+          Pos: [5406, -1948, -442]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Iron
+          Prefab: AsteroidVoxel03Iron
+          Name: Iron Asteroid
+          Pos: [-1246, -3787, -3607]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Iron
+          Prefab: AsteroidVoxel02Iron
+          Name: Iron Asteroid
+          Pos: [1935, 2054, -4911]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Sathium
+          Prefab: AsteroidVoxel02Sathium
+          Name: Sathium Asteroid
+          Pos: [-2607, -5309, -1317]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Sathium
+          Prefab: AsteroidVoxel03Sathium
+          Name: Sathium Asteroid
+          Pos: [-3383, 2426, 4254]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [303.5196, 1664, -932.8649]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [-593.861, 86, -3433.014]
+              Radius: 340
+            - Name: SpaceDronePlasma
+              Pos: [1.857232, -1892, -2.35599]
+              Radius: 432
+            - Name: SpaceDroneLaser
+              Pos: [-2149.401, -14, 2226.903]
+              Radius: 552
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 39
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 310
+                PathWayPoint:
+                - [-2160, 3567, 1834]
+                - [-324, -3120, -2623]
+                - [2573, 6875, 2949]
+                - [-253, -5850, 2059]
+                - [3711, 635, -495]
+                - [1782, -5688, 1621]
+                - [-3, -3883, 372]
+                - [-3901, -3963, -1652]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 33
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 488
+                PathWayPoint:
+                - [-4509, 1010, -3831]
+                - [958, 7492, 3390]
+                - [-3229, -1906, 1207]
+                - [2326, 1919, -4848]
+                - [-3955, 1614, 2050]
+                - [-14, -3752, -118]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 37
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 477
+                PathWayPoint:
+                - [-442, 2345, -9872]
+                - [-2759, 7241, -813]
+                - [-6464, -7111, 4926]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_OrbitalSpire
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [1302.929, 5327.284, -7911.039]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 15
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_AntarisSpacefarm
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [5535.203, 4173.012, -989.3139]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 22
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

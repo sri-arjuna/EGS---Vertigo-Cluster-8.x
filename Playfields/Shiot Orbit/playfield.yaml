@@ -1,0 +1,115 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 7.21
+TemperatureDay: -186
+Music: moonstone
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Shiot features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlue2
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidFieldRing
+          Name: Asteroid Field
+          Pos: [-1045, -983, -8957]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel01Iron
+          Prefab: AsteroidVoxel01Iron
+          Name: Iron Asteroid
+          Pos: [4713, 272, -2206]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Silicon
+          Prefab: AsteroidVoxel03Silicon
+          Name: Silicon Asteroid
+          Pos: [2079, 5042, -2341]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Silicon
+          Prefab: AsteroidVoxel02Silicon
+          Name: Silicon Asteroid
+          Pos: [-1788, -3854, -4630]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [7327.056, 1170.633, 8071.353]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-4510.33, -3027.746, 7932.814]
+              Radius: 317
+            - Name: SpaceDronePlasma
+              Pos: [8379.612, 1886.455, -5395.019]
+              Radius: 738
+            - Name: SpaceDroneLaser
+              Pos: [6460.385, 2030.887, -7162.3]
+              Radius: 369
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 39
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 303
+                PathWayPoint:
+                - [2007, -4050, -3447]
+                - [5370, 4270, -1931]
+                - [5204, -6665, 1916]
+                - [2415, 2852, 4221]
+                - [-991, -5488, 5503]
+                - [-4091, 6999, 3406]
+                - [-5009, -1280, -18]
+                - [-4372, 2594, -3696]
+                - [-950, 2368, -5512]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 20
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [2118.191, -6017.768, 1553.401]
+                Radius: 1215
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

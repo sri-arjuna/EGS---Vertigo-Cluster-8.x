@@ -1,0 +1,85 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 8.02
+TemperatureDay: -113
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Opis features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlueYellow
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidFieldRing
+          Name: Asteroid Field
+          Pos: [-5060, -6088, 5272]
+          Rot: [0, 0, 0]
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [2129.364, 2279.49, -8909.727]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-9039.368, 1812.062, 1228.285]
+              Radius: 721
+            - Name: SpaceDronePlasma
+              Pos: [8885.835, 754.6984, 1767.365]
+              Radius: 583
+            - Name: SpaceDronePlasma
+              Pos: [-10324.24, 3648.416, 1829.842]
+              Radius: 738
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 39
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 408
+                PathWayPoint:
+                - [2968, 1310, -5085]
+                - [5762, -5936, 27]
+                - [3154, 5705, 5525]
+                - [-3142, 993, 5383]
+                - [-5498, 5804, -26]
+                - [-3076, 2272, -5388]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 29
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-2729.78, 5571.501, 2578.464]
+                Radius: 1491
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

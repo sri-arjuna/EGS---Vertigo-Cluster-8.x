@@ -1,0 +1,131 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 5.51
+TemperatureDay: -164
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Gopesh features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite4Space
+Stars: SkyboxStarsPurple
+Nebula: PrefabNebulaBluePinkPurple
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRing
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant3
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-6446.2, -4839.84, -15393.17]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel01Neodymium
+          Prefab: AsteroidVoxel01Neodymium
+          Name: Neodymium Asteroid
+          Pos: [5654, -4603, -15714]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [8438.763, 7302.249, -17270.27]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-3566.287, 1569.322, 22759.68]
+              Radius: 383
+            - Name: SpaceDroneLaser
+              Pos: [-15940.1, 2790.583, -16595.44]
+              Radius: 419
+            - Name: SpaceDronePlasma
+              Pos: [17522.37, -7603.998, 13055.75]
+              Radius: 556
+            - Name: SpaceDroneLaser
+              Pos: [-16189.53, -4141.715, -11641.64]
+              Radius: 602
+            - Name: SpaceDroneLaser
+              Pos: [-14244.49, -4922.648, -15078.35]
+              Radius: 361
+            - Name: SpaceDroneLaser
+              Pos: [13958.41, 5971.688, 17078.3]
+              Radius: 399
+            - Name: SpaceDronePlasma
+              Pos: [12815.21, -46.99682, -15906.4]
+              Radius: 465
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 34
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 426
+                PathWayPoint:
+                - [-4862, -15088, 7899]
+                - [8105, -5057, 15000]
+                - [15554, 1334, 438]
+                - [7824, 4582, -12710]
+                - [-7794, -2393, -14424]
+                - [-14929, -5185, -421]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 34
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 459
+                PathWayPoint:
+                - [-12046, -13794, -5185]
+                - [-9159, -3502, -18203]
+                - [5335, -736, -22585]
+                - [19344, -7085, -14423]
+                - [20765, 8328, 1194]
+                - [16495, 9614, 15539]
+                - [2881, 1645, 24498]
+                - [-13060, -7685, 19889]
+                - [-21321, 11582, 6400]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 30
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-12433.21, 11924.63, 4120.611]
+                Radius: 989
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+
+Build: 1702

@@ -1,0 +1,152 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 7.81
+TemperatureDay: -125
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Scelet Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsRed
+Nebula: PrefabNebulaRed
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRectangle2
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant1
+          Mode: Survival
+          Name: Trading Station
+          Pos: [196.3609, 485.5886, 208.8366]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel01Iron
+          Prefab: AsteroidVoxel01Iron
+          Name: Iron Asteroid
+          Pos: [4525, -1838, 3102]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Silicon
+          Prefab: AsteroidVoxel02Silicon
+          Name: Silicon Asteroid
+          Pos: [-1476, 5074, -2982]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Cobalt
+          Prefab: AsteroidVoxel03Cobalt
+          Name: Cobalt Asteroid
+          Pos: [-2415, 4065, 3354]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Cobalt
+          Prefab: AsteroidVoxel01Cobalt
+          Name: Cobalt Asteroid
+          Pos: [1131, 4046, -4602]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Gold
+          Prefab: AsteroidVoxel03Gold
+          Name: Gold Asteroid
+          Pos: [4772, 2152, 688]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Gold
+          Prefab: AsteroidVoxel01Gold
+          Name: Gold Asteroid
+          Pos: [-5408, -1637, 1133]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Gold
+          Prefab: AsteroidVoxel03Gold
+          Name: Gold Asteroid
+          Pos: [3344, 4468, 2116]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-5533.535, -437, 5345.805]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-139.8834, 2261, 799.8604]
+              Radius: 484
+            - Name: SpaceDronePlasma
+              Pos: [-5399.82, -775, 4093.424]
+              Radius: 773
+            - Name: SpaceDronePlasma
+              Pos: [3222.145, -2027, -475.22]
+              Radius: 702
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 38
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 456
+                PathWayPoint:
+                - [3085, 2619, -2002]
+                - [863, -6226, -203]
+                - [397, 3132, 7021]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_OrbitalSpire
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [4276.84, 6911.717, -6643.124]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 24
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

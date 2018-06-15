@@ -1,0 +1,151 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 6.92
+TemperatureDay: -152
+Music: moonstone
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Keffen features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlue
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldFewBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidFieldFewBoxExclude
+          Name: Asteroid Field
+          Pos: [5869, -7532, 10438]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel01Iron
+          Prefab: AsteroidVoxel01Iron
+          Name: Iron Asteroid
+          Pos: [1534, -5141, -3293]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Promethium
+          Prefab: AsteroidVoxel01Promethium
+          Name: Promethium Asteroid
+          Pos: [2352, -404, -4652]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Promethium
+          Prefab: AsteroidVoxel02Promethium
+          Name: Promethium Asteroid
+          Pos: [4503, 540, -3588]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Promethium
+          Prefab: AsteroidVoxel02Promethium
+          Name: Promethium Asteroid
+          Pos: [3536, -2949, 3537]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [9719.626, 1489.468, 4169.443]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [5964.599, -1147.372, 6623.591]
+              Radius: 440
+            - Name: SpaceDronePlasma
+              Pos: [-7326.062, 3006.1, -8359.956]
+              Radius: 669
+            - Name: SpaceDroneLaser
+              Pos: [1819.39, 990.5392, 11085.97]
+              Radius: 594
+            - Name: SpaceDronePlasma
+              Pos: [-7845.893, 1077.763, -6962.77]
+              Radius: 534
+            - Name: SpaceDronePlasma
+              Pos: [3359.729, 1572.03, 9249.109]
+              Radius: 510
+            - Name: SpaceDroneLaser
+              Pos: [4241.145, 180.551, -8327.91]
+              Radius: 711
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 25
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 537
+                PathWayPoint:
+                - [-2351, -4764, -2531]
+                - [-299, 4562, -5932]
+                - [3171, -6987, -4192]
+                - [5491, -492, -1257]
+                - [5363, -4799, 2745]
+                - [2107, 6472, 4991]
+                - [-1478, -6211, 4805]
+                - [-4109, 7326, 2657]
+                - [-4217, 520, -525]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 24
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 476
+                PathWayPoint:
+                - [1133, 2553, 5019]
+                - [-3128, -870, 4952]
+                - [-6235, 3545, 1407]
+                - [-5339, -1359, -3372]
+                - [-1503, -5059, -6660]
+                - [4182, 7062, -6622]
+                - [7484, -1803, -1690]
+                - [5596, -1472, 3534]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 29
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-3258.019, 4946.852, 2324.284]
+                Radius: 1496
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

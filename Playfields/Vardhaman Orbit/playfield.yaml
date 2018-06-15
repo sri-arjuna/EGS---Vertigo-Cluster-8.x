@@ -1,0 +1,115 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 7.43
+TemperatureDay: -125
+Music: DistantWorlds
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Vardhaman features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite3Space
+Stars: SkyboxStarsBlue
+Nebula: PrefabNebulaBlueGlittery
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldFewBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-914.3356, 4599.236, -14780.52]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [-8439.705, -5167.521, 9623.407]
+              Radius: 545
+            - Name: SpaceDroneLaser
+              Pos: [10604.04, -4903.31, -8311.359]
+              Radius: 732
+            - Name: SpaceDronePlasma
+              Pos: [-11902.88, -4745.471, 3783.49]
+              Radius: 465
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 34
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 461
+                PathWayPoint:
+                - [7307, -6905, 2719]
+                - [6023, 7917, -7594]
+                - [-6151, 5312, -9264]
+                - [-11279, -2113, 3145]
+                - [-490, 9185, 11629]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 24
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 579
+                PathWayPoint:
+                - [7647, -2794, 5423]
+                - [9985, -6333, -2879]
+                - [3774, 1978, -9117]
+                - [-4478, -66, -8098]
+                - [-8480, 7916, -1438]
+                - [-6476, -5466, 5790]
+                - [519, -9775, 9221]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 21
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 377
+                PathWayPoint:
+                - [501, -3362, 8420]
+                - [-5863, 117, 7898]
+                - [-8560, 989, 2041]
+                - [-7034, -5115, -3520]
+                - [-3203, -69, -7399]
+                - [2441, -8116, -8194]
+                - [7187, 2051, -4741]
+                - [9795, 4909, 1131]
+                - [6123, 7964, 6472]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 37
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [24.98761, 8295.793, 6040.901]
+                Radius: 865
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

@@ -1,0 +1,141 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 8.85
+TemperatureDay: -102
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Lamatria features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlueYellow
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldBoxExclude
+          Name: Asteroid Field
+          Pos: [2392, 9277, -7536]
+          Rot: [0, 0, 0]
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-3430.998, -2035.829, -12521.81]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [3538.472, 1791.719, -13132.41]
+              Radius: 620
+            - Name: SpaceDronePlasma
+              Pos: [14862.92, -1218.167, 1412.293]
+              Radius: 343
+            - Name: SpaceDroneLaser
+              Pos: [14592.35, -584.849, 1829.6]
+              Radius: 534
+            - Name: SpaceDroneLaser
+              Pos: [-13344.41, 1067.701, 3011.789]
+              Radius: 642
+            - Name: SpaceDronePlasma
+              Pos: [10324.39, 3265.466, -8274.262]
+              Radius: 383
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 30
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 361
+                PathWayPoint:
+                - [3756, -8715, 5223]
+                - [10146, -4908, 504]
+                - [5964, 8442, -6760]
+                - [-1728, 4138, -9792]
+                - [-8583, 4601, -4672]
+                - [-9083, 990, 3830]
+                - [-2442, 3128, 8685]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 21
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 598
+                PathWayPoint:
+                - [-5239, 8388, -4935]
+                - [-10902, 5228, 325]
+                - [-8023, 9375, 8517]
+                - [394, -1195, 13234]
+                - [9801, -7784, 9233]
+                - [14123, 6852, -421]
+                - [10078, -638, -10698]
+                - [-388, -6406, -13008]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 21
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [4012.552, -9048.532, 4058.829]
+                Radius: 1206
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: BAO_RadosRepairStation
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-6867.952, -350.1276, 7400.146]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 16
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_XenuShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-6785.522, -5975.966, 4385.387]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 21
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_XenuShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-2544.911, 7680.091, 6305.391]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 19
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

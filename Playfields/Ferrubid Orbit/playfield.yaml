@@ -1,0 +1,155 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 8.41
+TemperatureDay: -105
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Ferrubid features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlue2
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel02Iron
+          Prefab: AsteroidVoxel02Iron
+          Name: Iron Asteroid
+          Pos: [5480, 65, -1298]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Iron
+          Prefab: AsteroidVoxel02Iron
+          Name: Iron Asteroid
+          Pos: [-3178, -3482, 3195]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Cobalt
+          Prefab: AsteroidVoxel02Cobalt
+          Name: Cobalt Asteroid
+          Pos: [4862, -3687, 357]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Sathium
+          Prefab: AsteroidVoxel03Sathium
+          Name: Sathium Asteroid
+          Pos: [2780, -4240, -3231]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Sathium
+          Prefab: AsteroidVoxel03Sathium
+          Name: Sathium Asteroid
+          Pos: [-2721, 4035, -2940]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [5924.663, 573.4558, 8963.806]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [7295.513, -3682.314, -7426.591]
+              Radius: 793
+            - Name: SpaceDroneLaser
+              Pos: [9037.482, -2870.812, -5807.88]
+              Radius: 558
+            - Name: SpaceDroneLaser
+              Pos: [-8147.006, 1338.813, 5772.388]
+              Radius: 377
+            - Name: SpaceDronePlasma
+              Pos: [7068.934, -1796.087, 5776.284]
+              Radius: 349
+            - Name: SpaceDroneLaser
+              Pos: [7780.914, -1713.316, -7979.215]
+              Radius: 385
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 24
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 325
+                PathWayPoint:
+                - [5158, 149, 3525]
+                - [-543, -1138, 7145]
+                - [-5786, 4037, 2778]
+                - [-4616, -2315, -3155]
+                - [433, 6906, -5692]
+                - [4977, -2361, -2389]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 32
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-1209.356, -4955.24, 4851.797]
+                Radius: 814
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_AntarisSpacefarm
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-3991.467, -2164.083, -4064.165]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 24
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_GhostRiderShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [4543.231, 4250.379, -228.6574]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 21
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

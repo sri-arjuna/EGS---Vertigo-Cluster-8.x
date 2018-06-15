@@ -1,0 +1,143 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 7.76
+TemperatureDay: -125
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Muhyotii Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlue
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidField
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant3
+          Mode: Survival
+          Name: Trading Station
+          Pos: [404.7106, 793.6932, 349.3648]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel01Magnesium
+          Prefab: AsteroidVoxel01Magnesium
+          Name: Magnesium Asteroid
+          Pos: [2931, -4744, -2021]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Gold
+          Prefab: AsteroidVoxel03Gold
+          Name: Gold Asteroid
+          Pos: [-3939, -4446, 31]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [1367.051, -1733, -4022.024]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [-5665.657, 1931, -4694.73]
+              Radius: 556
+            - Name: SpaceDronePlasma
+              Pos: [3571.931, 229, -1818.069]
+              Radius: 429
+            - Name: SpaceDroneLaser
+              Pos: [-675.2064, -1461, -640.9815]
+              Radius: 683
+            - Name: SpaceDronePlasma
+              Pos: [-5838.897, 2218, 2784.823]
+              Radius: 471
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 22
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 517
+                PathWayPoint:
+                - [5725, 1486, -807]
+                - [506, 2968, 2500]
+                - [4944, 5067, -4333]
+                - [-2791, 1950, -4242]
+                - [-2252, -2994, 1146]
+                - [1432, 6576, -457]
+                - [1092, -4209, -5916]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 33
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 430
+                PathWayPoint:
+                - [-3633, -3908, 3139]
+                - [-2556, 4046, 116]
+                - [-2061, 1067, 3239]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 23
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 515
+                PathWayPoint:
+                - [-1490, -4771, 3041]
+                - [1893, 6888, 755]
+                - [-1338, 1540, -3310]
+                - [3131, 8673, -6031]
+                - [2646, 6159, -966]
+                - [-7165, 5020, 1638]
+                - [-1636, -9672, 1469]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 21
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [6349.053, 3976.214, 6577.077]
+                Radius: 1166
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

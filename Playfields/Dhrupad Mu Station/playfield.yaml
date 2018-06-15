@@ -1,0 +1,150 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 6.12
+TemperatureDay: -178
+Music: DistantWorlds
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Dhrupad Mu Station features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite3Space
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlueOrange
+
+### POIs
+POIs:
+    Fixed:
+        - Type: BA_Admin
+          Prefab: TSO_Variant1
+          Mode: Survival
+          Name: Trading Station
+          Pos: [1401.786, -1440, -1248.249]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel02Copper
+          Prefab: AsteroidVoxel02Copper
+          Name: Copper Asteroid
+          Pos: [1156, 369, -5350]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Copper
+          Prefab: AsteroidVoxel03Copper
+          Name: Copper Asteroid
+          Pos: [2135, 4065, -4268]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Copper
+          Prefab: AsteroidVoxel01Copper
+          Name: Copper Asteroid
+          Pos: [1265, -3784, -4946]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Pentaxid
+          Prefab: AsteroidVoxel02Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [2875, 615, -4804]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Pentaxid
+          Prefab: AsteroidVoxel03Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [-3190, 2681, -3837]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-2814.375, -2468, 3216.577]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [3446.811, 2345, 5720.886]
+              Radius: 696
+            - Name: SpaceDronePlasma
+              Pos: [-1728.789, -1555, -2923.03]
+              Radius: 767
+            - Name: SpaceDronePlasma
+              Pos: [119.0025, -2268, -89.66275]
+              Radius: 415
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 32
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 469
+                PathWayPoint:
+                - [-1018, -1938, 3040]
+                - [-2953, -1387, 9260]
+                - [1474, 724, 3264]
+                - [-630, -2569, 4276]
+                - [1528, -4595, -1727]
+                - [-2138, 5848, -361]
+                - [-3455, -3907, -1937]
+                - [77, 3759, -518]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 23
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 411
+                PathWayPoint:
+                - [-3046, 4356, 3219]
+                - [-1905, 5484, 1001]
+                - [2144, -4087, -2430]
+                - [-2459, -7378, 1237]
+                - [-3974, -7753, 5642]
+                - [-3620, -1365, -724]
+                - [-5654, -125, -5632]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 33
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-2236.77, -738.135, -5505.536]
+                Radius: 1144
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

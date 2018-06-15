@@ -1,0 +1,175 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.52.3.0, Playfield Version: 8.0.3 [1634] (Alpha EXPERIMENTAL 8.0 - Part V)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -184
+Music: space
+Description: The space around Doules features an asteroid belt
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 2
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsCyan
+Nebula: PrefabNebulaBlueYellow
+Build: 1681
+Radiation: 7.25
+PvP: False
+UseFixed: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+POIs:
+   Fixed:
+   -  Type: BA_Admin
+      Prefab: AEGIS-POI-TSO
+      Mode: Survival
+      Name: AEGIS Trading Station
+      Pos: [258.2253, 2492.955, 5155.716]
+      Rot: [0, -42, 0]
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 720
+      -  Key: Music
+         Value: SunnySkies
+      -  Key: MapDistance
+         Value: 15000
+   -  Type: AsteroidFieldFewBoxExclude
+      Name: Asteroid Field
+      Pos: [-11476, 3158, -2463]
+      Rot: [0, 0, 0]
+   -  Type: AsteroidVoxel01Iron
+      Prefab: AsteroidVoxel01Iron
+      Name: Iron Asteroid
+      Pos: [4086, -3692, -2637]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 180
+   -  Type: AsteroidVoxel02Copper
+      Prefab: AsteroidVoxel02Copper
+      Name: Copper Asteroid
+      Pos: [3559, 2929, -3144]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 180
+   -  Type: AsteroidVoxel03Copper
+      Prefab: AsteroidVoxel03Copper
+      Name: Copper Asteroid
+      Pos: [-2543, 2247, 4113]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 180
+   -  Type: AsteroidVoxel01Copper
+      Prefab: AsteroidVoxel01Copper
+      Name: Copper Asteroid
+      Pos: [1913, -4527, -3291]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 180
+   -  Type: AsteroidVoxel03Zascosium
+      Prefab: AsteroidVoxel03Zascosium
+      Name: Zascosium Asteroid
+      Pos: [2864, 4726, 1441]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 180
+   -  Type: AsteroidVoxel03Zascosium
+      Prefab: AsteroidVoxel03Zascosium
+      Name: Zascosium Asteroid
+      Pos: [5091, 1534, 2527]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 180
+   -  Type: AsteroidVoxel01Zascosium
+      Prefab: AsteroidVoxel01Zascosium
+      Name: Zascosium Asteroid
+      Pos: [390, 4508, -4394]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 180
+   -  Type: CV_Alien
+      Prefab: AEGIS RHINO
+      Mode: Survival
+      Name: AEGIS Rhino
+      Pos: [-8000, -9000, 12000]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 5760
+   -  Type: CV_Alien
+      Prefab: AEGIS RHINO
+      Mode: Survival
+      Name: AGEIS Rhino
+      Pos: [-9000, -8000, 12000]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 5760
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [8616.082, -1176.316, -3158.161]
+      DroneOnDuty:
+      -  Name: SpaceDronePlasma
+         Pos: [7725.23, 1906.157, -4691.473]
+         Radius: 597
+      -  Name: SpaceDronePlasma
+         Pos: [3959.737, -3583.886, -8711.173]
+         Radius: 611
+      -  Name: SpaceDroneLaser
+         Pos: [10621.82, 3325.288, 837.3494]
+         Radius: 506
+      -  Name: SpaceDroneLaser
+         Pos: [-8524.62, 1075.112, 7015.12]
+         Radius: 713
+      -  Name: SpaceDronePlasma
+         Pos: [-3472.124, 128.8979, -7984.708]
+         Radius: 471
+      SpaceVessel:
+      -  Name: Freighter
+         FixedMaxSpeed: 37
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 334
+            PathWayPoint:
+            - [-247, 2744, 5397]
+            - [-3855, 4184, 3517]
+            - [-5802, 5139, -266]
+            - [-3807, -6149, -4173]
+            - [251, -6052, -5474]
+            - [3913, -359, -3570]
+            - [5414, 1692, 248]
+            - [3322, 5394, 3641]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 4
+            Extra: 1
+      -  Name: OrbitalPatrolVessel
+         FixedMaxSpeed: 29
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [2748.281, -4693.596, -3133.893]
+            Radius: 1294
+         Immobile: {}
+         Freighter:
+            PathWayPoint: []
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 3
+            Extra: 1

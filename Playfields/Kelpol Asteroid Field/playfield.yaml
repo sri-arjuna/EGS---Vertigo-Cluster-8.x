@@ -1,0 +1,212 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 5.27
+TemperatureDay: -107
+Music: moonstone
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Kelpol Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlue
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRectangle2
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant3
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-612.8519, -643.0466, 115.5108]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel01Neodymium
+          Prefab: AsteroidVoxel01Neodymium
+          Name: Neodymium Asteroid
+          Pos: [3950, 2272, -3834]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Zascosium
+          Prefab: AsteroidVoxel01Zascosium
+          Name: Zascosium Asteroid
+          Pos: [-4842, -2920, -486]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Zascosium
+          Prefab: AsteroidVoxel03Zascosium
+          Name: Zascosium Asteroid
+          Pos: [4184, -4522, -1743]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Pentaxid
+          Prefab: AsteroidVoxel02Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [-2973, 2085, 4388]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Pentaxid
+          Prefab: AsteroidVoxel02Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [-4671, -1985, -2286]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Pentaxid
+          Prefab: AsteroidVoxel02Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [3400, -4121, 2318]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [1732.041, -2123, -2584.251]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [4719.406, -637, -1799.947]
+              Radius: 618
+            - Name: SpaceDronePlasma
+              Pos: [3464.111, -1054, -1377.65]
+              Radius: 425
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 34
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 528
+                PathWayPoint:
+                - [-8634, -3872, 3020]
+                - [-3513, -1918, -1059]
+                - [-8898, 3418, -3975]
+                - [-3804, -2117, -8036]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 36
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 495
+                PathWayPoint:
+                - [-4141, 2517, 4129]
+                - [-6267, -3669, 5045]
+                - [-2136, -9344, -325]
+                - [-9452, -8920, -7463]
+                - [-1504, -2829, -2282]
+                - [-9225, 9863, 6074]
+                - [-4026, -7288, 2029]
+                - [-7929, -5506, 7936]
+                - [-8050, 4596, -1026]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 27
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 566
+                PathWayPoint:
+                - [-3079, 1592, -651]
+                - [-1696, -4915, -806]
+                - [2289, 4386, -2025]
+                - [2116, -4698, -6711]
+                - [1080, 2976, 6596]
+                - [-2991, 4122, 3670]
+                - [-4766, 2824, 2927]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 23
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [2441.302, 1036.08, 2470.59]
+                Radius: 1177
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_AntarisSpacefarm
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-2159.87, 2054.167, -2585.241]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 24
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_AntarisSpacefarm
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-6793.378, 5951.805, 5936.628]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 22
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_AntarisSpacefarm
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-2732.543, -2161.804, 2004.245]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 19
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

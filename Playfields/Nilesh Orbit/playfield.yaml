@@ -1,0 +1,128 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 7.61
+TemperatureDay: -186
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Nilesh features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareRedSpace
+Stars: SkyboxStarsRed
+Nebula: PrefabNebulaBluePinkRed
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldFewBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant6
+          Mode: Survival
+          Name: Trading Station
+          Pos: [-4908.636, -425.7918, 2150.648]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-6605.792, 3272.464, 5612.762]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [-6699.365, 1468.939, -7756.088]
+              Radius: 653
+            - Name: SpaceDronePlasma
+              Pos: [9547.153, -3453.776, -1105.378]
+              Radius: 456
+            - Name: SpaceDronePlasma
+              Pos: [7893.117, 1309.436, -8807.271]
+              Radius: 561
+            - Name: SpaceDroneLaser
+              Pos: [7050.209, 3431.399, 8462.316]
+              Radius: 443
+            - Name: SpaceDronePlasma
+              Pos: [-10049.58, -3504.428, -5379.219]
+              Radius: 749
+            - Name: SpaceDronePlasma
+              Pos: [7757.924, -3191.086, -7034.835]
+              Radius: 701
+            - Name: SpaceDronePlasma
+              Pos: [7050.664, 514.3952, 5907.342]
+              Radius: 300
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 35
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 557
+                PathWayPoint:
+                - [2946, 5311, 3894]
+                - [7395, 894, 189]
+                - [4736, -3157, -5637]
+                - [-1669, -3177, -8283]
+                - [-7755, -6542, -3982]
+                - [-7338, -394, 3305]
+                - [-1958, 3537, 7671]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 35
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [2359.61, -665.457, 5589.421]
+                Radius: 1477
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_Dion-III
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [1368.993, -1697.14, 5499.128]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 20
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_XenuSupplyStation
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [1808.883, 5520.179, -2244.182]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 18
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

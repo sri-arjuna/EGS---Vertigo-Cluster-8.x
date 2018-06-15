@@ -1,0 +1,167 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 5.06
+TemperatureDay: -134
+Music: moonstone
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Tulmarea features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlue
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidFieldFewBoxExclude
+          Name: Asteroid Field
+          Pos: [11726, 5902, 891]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel03Silicon
+          Prefab: AsteroidVoxel03Silicon
+          Name: Silicon Asteroid
+          Pos: [-6172, 1388, 7333]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Silicon
+          Prefab: AsteroidVoxel02Silicon
+          Name: Silicon Asteroid
+          Pos: [-5997, -4875, -5985]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Silicon
+          Prefab: AsteroidVoxel03Silicon
+          Name: Silicon Asteroid
+          Pos: [6935, -6190, 3145]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Erestrum
+          Prefab: AsteroidVoxel02Erestrum
+          Name: Erestrum Asteroid
+          Pos: [2645, -6654, -7235]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Erestrum
+          Prefab: AsteroidVoxel03Erestrum
+          Name: Erestrum Asteroid
+          Pos: [3571, 1004, -8829]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Erestrum
+          Prefab: AsteroidVoxel02Erestrum
+          Name: Erestrum Asteroid
+          Pos: [4664, 8864, -1193]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [4961, 4897.764, -12211.67]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [-243.7036, -3373.135, 12517.05]
+              Radius: 348
+            - Name: SpaceDronePlasma
+              Pos: [-11169.19, -2242.863, -7760.391]
+              Radius: 597
+            - Name: SpaceDronePlasma
+              Pos: [-10828.34, -788.4631, -8343.299]
+              Radius: 793
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 30
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 483
+                PathWayPoint:
+                - [-6703, -8237, -1008]
+                - [-5949, 2603, -10299]
+                - [3753, -3885, -9571]
+                - [11288, 1785, -3484]
+                - [8740, 3169, 5956]
+                - [909, -6826, 12097]
+                - [-8338, 1962, 7740]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 30
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 315
+                PathWayPoint:
+                - [7571, -6901, 1429]
+                - [4372, -5045, -7990]
+                - [-6935, 2101, -7357]
+                - [-10038, 4836, 4747]
+                - [1571, 8933, 12256]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 20
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-3742.878, 9053.024, -4465.771]
+                Radius: 787
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_XenuShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-5969.826, -6350.504, -5977.583]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 23
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

@@ -1,0 +1,189 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 8.39
+TemperatureDay: -135
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Voina Asteroid Field features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsRed
+Nebula: PrefabNebulaRed
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldRectangle2
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: BA_Admin
+          Prefab: TSO_Variant3
+          Mode: Survival
+          Name: Trading Station
+          Pos: [11.78952, -544.5104, -157.6402]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel02Iron
+          Prefab: AsteroidVoxel02Iron
+          Name: Iron Asteroid
+          Pos: [-4420, 2890, -14]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Promethium
+          Prefab: AsteroidVoxel02Promethium
+          Name: Promethium Asteroid
+          Pos: [3815, 3090, -1554]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Promethium
+          Prefab: AsteroidVoxel02Promethium
+          Name: Promethium Asteroid
+          Pos: [5304, 1644, 2162]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Promethium
+          Prefab: AsteroidVoxel03Promethium
+          Name: Promethium Asteroid
+          Pos: [3632, -4970, 1797]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Zascosium
+          Prefab: AsteroidVoxel02Zascosium
+          Name: Zascosium Asteroid
+          Pos: [2984, -3062, 2880]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Zascosium
+          Prefab: AsteroidVoxel02Zascosium
+          Name: Zascosium Asteroid
+          Pos: [-3151, 2153, -4071]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Zascosium
+          Prefab: AsteroidVoxel01Zascosium
+          Name: Zascosium Asteroid
+          Pos: [1566, 4672, -3550]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel02Pentaxid
+          Prefab: AsteroidVoxel02Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [5046, -1895, -451]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [5870.959, 31, -4037.012]
+          DroneOnDuty:
+            - Name: SpaceDroneLaser
+              Pos: [2823.605, -2071, -6577.555]
+              Radius: 438
+            - Name: SpaceDronePlasma
+              Pos: [7346.428, -2319, 1710.805]
+              Radius: 483
+            - Name: SpaceDroneLaser
+              Pos: [1229.171, 2001, -705.0016]
+              Radius: 370
+            - Name: SpaceDronePlasma
+              Pos: [-624.9275, 1176, 4021.737]
+              Radius: 667
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 39
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 527
+                PathWayPoint:
+                - [1651, -6056, -2005]
+                - [945, 3890, -1095]
+                - [-3929, 3446, -1899]
+                - [-1025, 3462, 1051]
+                - [-56, -4083, 26]
+                - [-903, -3219, 2506]
+                - [-323, -8258, 1318]
+                - [-3764, 2731, -1182]
+                - [-574, -9978, 1796]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 20
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 430
+                PathWayPoint:
+                - [-5714, -192, -2426]
+                - [2210, 3523, -4404]
+                - [1046, 6537, -1107]
+                - [-4020, -5153, -2619]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 36
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 511
+                PathWayPoint:
+                - [263, 3843, 2505]
+                - [-515, -1284, -4682]
+                - [-213, 3442, 1912]
+                - [-3913, 4534, -2727]
+                - [274, 2443, -4615]
+                - [3098, -854, -2249]
+                - [-3210, 3253, -37]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+
+Build: 1702

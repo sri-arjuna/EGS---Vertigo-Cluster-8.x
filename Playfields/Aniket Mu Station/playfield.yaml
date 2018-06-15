@@ -1,0 +1,89 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 6.14
+TemperatureDay: -139
+Music: space
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Aniket Mu Station features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhite3Space
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlueOrange
+
+### POIs
+POIs:
+    Fixed:
+        - Type: BA_Admin
+          Prefab: TSO_Variant6
+          Mode: Survival
+          Name: Trading Station
+          Pos: [1514.869, 267, 791.1083]
+          Rot: [0, 0, 0]
+          InitPower: True
+          Properties:
+            - Key: Music
+              Value: NebularClouds
+
+        - Type: AsteroidVoxel01Magnesium
+          Prefab: AsteroidVoxel01Magnesium
+          Name: Magnesium Asteroid
+          Pos: [-1842, -2528, -4354]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [5728.804, -1297, -5265.431]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [800.5659, -1120, 1043.225]
+              Radius: 531
+            - Name: SpaceDroneLaser
+              Pos: [-599.9631, 1543, 6.65113]
+              Radius: 616
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 28
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 594
+                PathWayPoint:
+                - [7435, 4372, -4525]
+                - [-7459, -1319, 941]
+                - [1720, 1365, -3118]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 35
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [3084.499, 2712.934, 4753.976]
+                Radius: 1455
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 3
+                  Extra: 1
+
+Build: 1702

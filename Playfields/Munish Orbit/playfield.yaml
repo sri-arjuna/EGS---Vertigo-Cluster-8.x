@@ -1,0 +1,138 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 5.08
+TemperatureDay: -113
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Munish features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareRedSpace
+Stars: SkyboxStarsPurple
+Nebula: PrefabNebulaOrange
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldFewBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel01Sathium
+          Prefab: AsteroidVoxel01Sathium
+          Name: Sathium Asteroid
+          Pos: [-3118, 759, 4512]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Sathium
+          Prefab: AsteroidVoxel03Sathium
+          Name: Sathium Asteroid
+          Pos: [-3654, 3105, -3018]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [-5072.254, 3420.695, -7837.468]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [-7529.688, 3017.666, -4719.843]
+              Radius: 357
+            - Name: SpaceDroneLaser
+              Pos: [7955.125, -3876.161, -1368.234]
+              Radius: 653
+            - Name: SpaceDronePlasma
+              Pos: [7614.742, -388.5111, -6212.27]
+              Radius: 340
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 35
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 352
+                PathWayPoint:
+                - [-5862, 242, 176]
+                - [-3396, -441, -5495]
+                - [3240, -1729, -6022]
+                - [7857, -238, -236]
+                - [4264, -1322, 6899]
+                - [-3343, 5738, 6215]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: Freighter
+              FixedMaxSpeed: 26
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 420
+                PathWayPoint:
+                - [4701, -3275, -719]
+                - [2292, 4464, -5880]
+                - [-4387, 5455, -5475]
+                - [-7405, 1712, 1133]
+                - [-2974, -2646, 7629]
+                - [4690, 131, 5854]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 31
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [-3408.151, 2398.602, 4682.824]
+                Radius: 764
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 3
+                  Extra: 1
+            - Name: BAO_XenuShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-3262.986, 2420.267, 5126.427]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 23
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_CrusaldOrbital
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [4718.886, -2201.128, 3517.39]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 16
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702

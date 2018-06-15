@@ -1,0 +1,159 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: False
+UseFixed: True
+Radiation: 5.47
+TemperatureDay: -154
+Music: DistantWorlds
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around Damodara features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareRedSpace
+Stars: SkyboxStarsRed
+Nebula: PrefabNebulaBluePinkRed
+
+### POIs
+POIs:
+    Fixed:
+        - Type: AsteroidFieldFewBoxExclude
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel01Iron
+          Prefab: AsteroidVoxel01Iron
+          Name: Iron Asteroid
+          Pos: [6222, -7671, -3637]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Pentaxid
+          Prefab: AsteroidVoxel01Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [1208, -6117, -6749]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel01Pentaxid
+          Prefab: AsteroidVoxel01Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [-3190, -7189, -6707]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - Type: AsteroidVoxel03Pentaxid
+          Prefab: AsteroidVoxel03Pentaxid
+          Name: Pentaxid Asteroid
+          Pos: [-7821, 2163, -3813]
+          Rot: [0, 0, 0]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [4333.433, -1249.716, -13724.58]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [5705.363, -5272.137, 10263.28]
+              Radius: 419
+            - Name: SpaceDronePlasma
+              Pos: [-15043.95, 68.73988, -229.269]
+              Radius: 744
+            - Name: SpaceDronePlasma
+              Pos: [-10398.79, 3731.119, 11119.04]
+              Radius: 458
+            - Name: SpaceDronePlasma
+              Pos: [10706.77, -1160.858, 9862.661]
+              Radius: 498
+            - Name: SpaceDroneLaser
+              Pos: [8594.089, -2443.981, 12384.08]
+              Radius: 315
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 25
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 418
+                PathWayPoint:
+                - [176, 5497, -7718]
+                - [7519, -2827, -5720]
+                - [9019, -6040, 2276]
+                - [4323, -5227, 9529]
+                - [-4331, -1724, 8493]
+                - [-8009, 3308, 1636]
+                - [-7003, 8355, -5852]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: OrbitalPatrolVessel
+              FixedMaxSpeed: 29
+              Mission: SpacePatrol
+              RangePatrol:
+                Position3D: [4923.998, -7780.196, 4292.092]
+                Radius: 1159
+                DistToGround: 0
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 1
+            - Name: BAO_XenuSupplyStation
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [7664.126, 5408.125, -4078.819]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 17
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_OrbitalSpire
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-8239.621, 4178.668, 4458]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 23
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+            - Name: BAO_Migotzu-Orbital-Hub
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-225.2279, 9213.488, 5201.917]
+              Stock:
+                - Name: SpaceDronePlasma
+                  Amount: 20
+                  Extra: 1
+              Properties:
+                - Key: RegenAfter
+                  Value: 720
+
+Build: 1702
